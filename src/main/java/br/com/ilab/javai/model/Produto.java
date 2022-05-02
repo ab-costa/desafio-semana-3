@@ -7,25 +7,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity@Table(name="")
+@Entity
+@Table(name = "")
 public class Produto {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
-    @Column(name="nome")
+    @Column(name = "nome")
     private String nome;
-    @Column(name="descricao")
+    @Column(name = "descricao")
     private String descricao;
-    @Column(name="quantidade")
+    @Column(name = "quantidade")
     private Integer quantidade;
-    @Column(name="data_cadastro")
+    @Column(name = "data_cadastro")
     private String dataCadastro;
 
-    
     public Produto() {
     }
-
 
     public Integer getId() {
         return id;
@@ -65,5 +64,5 @@ public class Produto {
 
     public void setDataCadastro(String dataCadastro) {
         this.dataCadastro = dataCadastro;
-    }    
+    }
 }
